@@ -11,7 +11,7 @@
 #import "XMView.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
-@interface XMViewController ()
+@interface XMViewController ()<XMProtocol>
 
 @property (nonatomic, strong) XMViewModel *viewModel;
 
@@ -55,6 +55,8 @@
     RAC(self.firstView , name) = RACObserve(self.viewModel, nameString);
     RAC(self.firstView, age) = RACObserve(self.viewModel, ageString);
     
+    self.firstView.viewDelegate = self;
+    
     // 第二种写法
     RAC(self.firstView, ViewModel) = RACObserve(self.viewModel, ViewModel);
     
@@ -63,6 +65,9 @@
         [self.viewModel updateModel:x];
     }];
 }
+- (void)smk_view:(UIView *)view withEvents:(NSDictionary *)events{
+    NSLog(@"=====withEvents==%@",events);
 
+}
 
 @end

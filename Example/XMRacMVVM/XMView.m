@@ -63,10 +63,17 @@
 - (RACSignal *)updateDate {
     return [[self.updateButton rac_signalForControlEvents:UIControlEventTouchUpInside]
             flattenMap:^RACStream *(id value) {
+                
                 XMModel *model = [[XMModel alloc] init];
                 model.name = @"张三";
                 NSInteger age = arc4random() % 100;
                 model.age = age;
+                
+                // 传递事件
+                if ([self.viewDelegate respondsToSelector:@selector(smk_view:withEvents:)]) {
+                    [self.viewDelegate smk_view:self withEvents:@{@"updateDate": model}];
+                }
+
                 return [RACSignal return:model];
             }];
 }

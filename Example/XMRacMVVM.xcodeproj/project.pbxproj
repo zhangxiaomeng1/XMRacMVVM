@@ -75,6 +75,7 @@
 		F8E2525820BCF48B00ADECE9 /* XMModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMModel.m; sourceTree = "<group>"; };
 		F8E2525A20BCF49700ADECE9 /* XMViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMViewModel.h; sourceTree = "<group>"; };
 		F8E2525B20BCF49700ADECE9 /* XMViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMViewModel.m; sourceTree = "<group>"; };
+		F8E2525D20BCFEC100ADECE9 /* XMProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMProtocol.h; sourceTree = "<group>"; };
 		FC636E7704F9FF996D4EB18E /* Pods-XMRacMVVM_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMRacMVVM_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMRacMVVM_Example/Pods-XMRacMVVM_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +153,7 @@
 				F8E2525820BCF48B00ADECE9 /* XMModel.m */,
 				F8E2525A20BCF49700ADECE9 /* XMViewModel.h */,
 				F8E2525B20BCF49700ADECE9 /* XMViewModel.m */,
+				F8E2525D20BCFEC100ADECE9 /* XMProtocol.h */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,

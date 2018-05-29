@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMProtocol.h"
 
 @class XMModel, RACSignal;
 
-@interface XMView : UIView
+@interface XMView : UIView 
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *age;
@@ -18,5 +19,10 @@
 @property (nonatomic, strong)  XMModel *ViewModel;
 
 - (RACSignal *)updateDate;
+
+/**
+ *  viewDelegate 传递事件
+ */
+@property (nonatomic, weak) id<XMProtocol> viewDelegate;
 
 @end
