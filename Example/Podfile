@@ -3,6 +3,11 @@ use_frameworks!
 target 'XMRacMVVM_Example' do
   pod 'XMRacMVVM', :path => '../'
 
+pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
+
+
+pod 'ReactiveViewModel', '0.3'
+
   target 'XMRacMVVM_Tests' do
     inherit! :search_paths
 

@@ -1,0 +1,41 @@
+PODS:
+  - ReactiveCocoa (2.5.2):
+    - ReactiveCocoa/UI (= 2.5.2)
+  - ReactiveCocoa/Core (2.5.2):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5.2)
+  - ReactiveCocoa/UI (2.5.2):
+    - ReactiveCocoa/Core
+  - ReactiveViewModel (0.3):
+    - ReactiveCocoa (~> 2.4)
+  - XMRacMVVM (0.1.0)
+
+DEPENDENCIES:
+  - ReactiveCocoa (from `https://github.com/zhao0/ReactiveCocoa.git`, tag `2.5.2`)
+  - ReactiveViewModel (= 0.3)
+  - XMRacMVVM (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ReactiveViewModel
+
+EXTERNAL SOURCES:
+  ReactiveCocoa:
+    :git: https://github.com/zhao0/ReactiveCocoa.git
+    :tag: 2.5.2
+  XMRacMVVM:
+    :path: "../"
+
+CHECKOUT OPTIONS:
+  ReactiveCocoa:
+    :git: https://github.com/zhao0/ReactiveCocoa.git
+    :tag: 2.5.2
+
+SPEC CHECKSUMS:
+  ReactiveCocoa: 3ff25b1bd992ac79c5c79b26b6c0c1713b715bb2
+  ReactiveViewModel: 58918dcbcec2d3151195ab1ed9163c57a8163999
+  XMRacMVVM: d2134f367c1232dbe264deae1dc32be8d82020a2
+
+PODFILE CHECKSUM: f869d66819c197dfd516e976a021f2b62a89806b
+
+COCOAPODS: 1.5.0

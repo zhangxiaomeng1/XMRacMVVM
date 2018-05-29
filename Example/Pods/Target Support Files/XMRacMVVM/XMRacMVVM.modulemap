@@ -1,0 +1,6 @@
+framework module XMRacMVVM {
+  umbrella header "XMRacMVVM-umbrella.h"
+
+  export *
+  module * { export * }
+}
