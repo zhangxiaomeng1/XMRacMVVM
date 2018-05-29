@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XMRacMVVM_Example' do
+  pod 'XMRacMVVM', :path => '../'
+
+  target 'XMRacMVVM_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
